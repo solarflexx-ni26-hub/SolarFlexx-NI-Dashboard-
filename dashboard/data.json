@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "generated": "2026-08-22T23:45:00Z",
+    "generated_label": "22/08/2026, 23:45",
+    "sources": ["HubSpot 147795922", "Gmail solarflexgroup26@gmail.com", "Google Calendar"],
+    "note": "Snapshot taken when the AI team was set up."
+  },
+  "alerts": [
+    {
+      "level": "critical",
+      "title": "£45,245 of proposals have gone 64 days without follow-up",
+      "detail": "Three proposals were sent on 19/06/2026 and nothing has been logged since. This is the single largest recoverable sum in the business.",
+      "action": "Run quote-chaser — drafts are prepared for all three"
+    },
+    {
+      "level": "critical",
+      "title": "Every open deal is past its close date",
+      "detail": "All six open deals carry a close date of 30/06/2026. When everything is overdue, nothing is — the pipeline has stopped functioning as a forecast.",
+      "action": "Re-date each open deal to something realistic"
+    },
+    {
+      "level": "warn",
+      "title": "No CRM activity since 19 June",
+      "detail": "No deal or contact has been created in 64 days. Either enquiries have stopped, or they are being handled outside the CRM and are invisible.",
+      "action": "Establish which — the fix is completely different for each"
+    },
+    {
+      "level": "warn",
+      "title": "333 unread emails, real signal buried",
+      "detail": "Inverter-offline alerts from SolisCloud and a supplier invoice reminder are sitting unread among retail promotions.",
+      "action": "Run daily-brief — inbox-triage sorts and drafts, service-watch catches the alerts"
+    }
+  ],
+  "kpis": [
+    { "label": "Open pipeline", "value": 74195, "format": "gbp", "sub": "6 deals", "tone": "neutral" },
+    { "label": "Proposals out", "value": 45245, "format": "gbp", "sub": "3 deals · 64 days old", "tone": "critical" },
+    { "label": "Won to date", "value": 45795, "format": "gbp", "sub": "4 deals", "tone": "good" },
+    { "label": "Average deal", "value": 11999, "format": "gbp", "sub": "across 10 deals", "tone": "neutral" }
+  ],
+  "pipeline": [
+    { "stage": "Pre Qualified Before Survey", "count": 2, "value": 18500 },
+    { "stage": "Qualified To Buy", "count": 0, "value": 0 },
+    { "stage": "Survey Visit Scheduled", "count": 1, "value": 10450 },
+    { "stage": "Proposal Sent", "count": 3, "value": 45245 }
+  ],
+  "closed": { "won_count": 4, "won_value": 45795, "lost_count": 0, "lost_value": 0 },
+  "deals": [
+    { "name": "Alamuskin Community Centre — D McCann", "value": 27995, "stage": "Proposal Sent", "age_days": 64, "created": "19/06/2026" },
+    { "name": "Jamesy McCreesh", "value": 8750, "stage": "Proposal Sent", "age_days": 64, "created": "19/06/2026" },
+    { "name": "Steven Hamill — EV charging & force charging", "value": 8500, "stage": "Proposal Sent", "age_days": 64, "created": "19/06/2026" },
+    { "name": "15 panels, 9kWh battery & eddi", "value": 10450, "stage": "Survey Visit Scheduled", "age_days": 139, "created": "05/04/2026" },
+    { "name": "SRNE 9.5K — 6.7kW, 10kW battery & eddi", "value": 9500, "stage": "Pre Qualified", "age_days": 139, "created": "05/04/2026" },
+    { "name": "Team Kit Ballymena — Nialls House", "value": 9000, "stage": "Pre Qualified", "age_days": 64, "created": "19/06/2026" }
+  ],
+  "inbox": { "total": 452, "unread": 333, "important_unread": 36, "drafts_waiting": 0, "labelled": false },
+  "service": { "open_tickets": 0, "monitoring_alerts_7d": 1, "systems_offline": "unconfirmed", "note": "SolisCloud reported an abnormal offline device on 20/08. Not yet matched to a customer." },
+  "recurring": { "cleans_12m": 0, "health_checks_12m": 0, "recalls_due": 0, "note": "No pipeline or object exists for cleaning, health checks or maintenance. Recurring revenue is currently unmeasurable." },
+  "data_health": [
+    { "item": "Lost reasons", "status": "missing", "detail": "0 deals ever marked Closed Lost. Win rate cannot be calculated and we do not know what we lose on." },
+    { "item": "Lead source", "status": "missing", "detail": "Not recorded on any contact. Nobody can say which marketing works." },
+    { "item": "Recurring services", "status": "missing", "detail": "Cleans, health checks and maintenance have no home in the CRM." },
+    { "item": "Deal close dates", "status": "broken", "detail": "All six open deals are dated 30/06/2026 — in the past." },
+    { "item": "Deal naming", "status": "inconsistent", "detail": "Free-text names, one blank. Makes reporting unreliable." },
+    { "item": "Inverter serials", "status": "missing", "detail": "Monitoring alerts cannot be matched to customers without them." },
+    { "item": "Calendar timezone", "status": "broken", "detail": "Set to UTC, should be Europe/London. Bookings drift an hour in summer." },
+    { "item": "Second user", "status": "missing", "detail": "Jess has no HubSpot seat — all 10 deals are owned by Dave." }
+  ],
+  "team": [
+    { "name": "inbox-triage", "role": "Sorts the inbox, drafts every reply, turns enquiries into CRM records", "cadence": "3× daily", "handles": "The 333 unread" },
+    { "name": "quote-chaser", "role": "Chases proposals on a 2/7/14/21-day ladder and keeps CRM data honest", "cadence": "Mon & Thu", "handles": "The £45,245" },
+    { "name": "scheduler", "role": "Books surveys, installs, cleans and health checks; confirmations and recalls", "cadence": "Daily", "handles": "The diary" },
+    { "name": "service-watch", "role": "Catches inverter faults before the customer notices; grades P1–P4", "cadence": "Daily", "handles": "SolisCloud alerts" },
+    { "name": "content-studio", "role": "Newsletter, blog and social — drafted, never auto-published", "cadence": "Monthly + fortnightly", "handles": "Staying front of mind" },
+    { "name": "analyst", "role": "Daily brief, weekly review, sales tracking, this dashboard", "cadence": "Daily & Friday", "handles": "The numbers" }
+  ]
+}
