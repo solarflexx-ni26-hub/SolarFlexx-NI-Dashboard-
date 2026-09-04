@@ -1,3 +1,6 @@
 node_modules/
 .DS_Store
 *.log
+
+# Generated from dashboard/data.json by dashboard/build.mjs
+dashboard/index.html
